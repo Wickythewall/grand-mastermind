@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Dialog.css';
-import SolutionPeg from './SolutionPeg';
+import SolutionPeg from './Peg';
 
 const Dialog = ({ gameResult, points, secretCode, onClose }) => (
     <div className="dialog-overlay">
