@@ -6,6 +6,7 @@ import './styles/App.css';
 
 const App = () => {
     const {
+		secretCode,
         guesses,
         feedback,
         activeRow,
@@ -36,6 +37,7 @@ const App = () => {
                 <Dialog
                     gameResult={gameResult}
                     points={points}
+					secretCode={secretCode}
                     onClose={resetGame}
                 />
             )}

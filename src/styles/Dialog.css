@@ -22,3 +22,10 @@
         padding: 10px 20px;
         margin-top: 10px;
     }
+
+.solution-pegs {
+    display: flex; /* Use flexbox to arrange pegs in a row */
+    justify-content: center; /* Center the pegs horizontally */
+    align-items: center; /* Center the pegs vertically */
+    gap: 10px; /* Add some space between the pegs */
+}
