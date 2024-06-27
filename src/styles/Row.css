@@ -1,0 +1,24 @@
+.row {
+    display: flex;
+}
+
+.submit-button {
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #a58cbb;
+    color: white;
+    cursor: pointer;
+}
+
+.submit-button-placeholder {
+    padding: 10px;
+    margin: 2px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Invisible background */
+    color: transparent; /* Invisible text */
+}

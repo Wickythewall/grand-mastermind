@@ -1,0 +1,31 @@
+.feedback {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 10px); /* Adjust the size of the grid cells */
+    grid-template-rows: repeat(2, 10px); /* Adjust the size of the grid cells */
+    gap: 10px;
+}
+
+.feedback-peg {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.feedback-peg.black {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.feedback-peg.white {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.feedback-peg.blue {
+    background-color: dodgerblue;
+    border: 1px solid black;
+}

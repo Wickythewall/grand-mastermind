@@ -1,0 +1,76 @@
+.selection-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.color-options,
+.shape-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.color-option,
+.shape-option {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.color-option.red {
+    background-color: red;
+}
+
+.color-option.green {
+    background-color: green;
+}
+
+.color-option.blue {
+    background-color: blue;
+}
+
+.color-option.yellow {
+    background-color: yellow;
+}
+
+.color-option.orange {
+    background-color: orange;
+}
+
+.color-option.purple {
+    background-color: purple;
+}
+
+.shape-option.circle {
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.shape-option.square {
+    background-color: grey;
+    border-radius: 0;
+}
+
+.shape-option.triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid grey;
+}
+
+.shape-option.rectangle {
+    margin-top:10px;
+    top: 5px;
+    width: 20px;
+    height: 10px;
+    background-color: grey;
+}
+
+.selected {
+    border: 2px solid black;
+}

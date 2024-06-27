@@ -1,0 +1,69 @@
+.cell {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a58cbb;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-cell {
+    border: 2px solid yellow;
+}
+
+.peg-display {
+    width: 20px;
+    height: 20px;
+}
+
+.peg-display.red {
+    background-color: red;
+}
+
+.peg-display.green {
+    background-color: green;
+}
+
+.peg-display.blue {
+    background-color: blue;
+}
+
+.peg-display.yellow {
+    background-color: yellow;
+}
+
+.peg-display.orange {
+    background-color: orange;
+}
+
+.peg-display.purple {
+    background-color: purple;
+}
+
+.peg-display.circle {
+    border-radius: 50%;
+}
+
+.peg-display.square {
+    border-radius: 0;
+}
+
+.peg-display.triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid;
+}
+
+.menu-overlay {
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+}

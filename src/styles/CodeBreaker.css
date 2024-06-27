@@ -1,0 +1,12 @@
+.code-breaker {
+    display: flex;
+    align-items: center;
+}
+
+.code-breaker select {
+    margin: 0 5px;
+}
+
+.code-breaker button {
+    margin-left: 10px;
+}
