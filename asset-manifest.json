@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/grand-mastermind/static/css/main.fc73fefc.css",
-    "main.js": "/grand-mastermind/static/js/main.034d1c81.js",
+    "main.js": "/grand-mastermind/static/js/main.8f936435.js",
     "static/js/453.5da89670.chunk.js": "/grand-mastermind/static/js/453.5da89670.chunk.js",
     "index.html": "/grand-mastermind/index.html",
     "static/media/HexagonIcon.svg": "/grand-mastermind/static/media/HexagonIcon.d1955956089b6de5532d6348b233bff4.svg",
     "static/media/StarIcon.svg": "/grand-mastermind/static/media/StarIcon.22c88bb61bbe9c6a6b280e4f33640c2a.svg",
     "main.fc73fefc.css.map": "/grand-mastermind/static/css/main.fc73fefc.css.map",
-    "main.034d1c81.js.map": "/grand-mastermind/static/js/main.034d1c81.js.map",
+    "main.8f936435.js.map": "/grand-mastermind/static/js/main.8f936435.js.map",
     "453.5da89670.chunk.js.map": "/grand-mastermind/static/js/453.5da89670.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc73fefc.css",
-    "static/js/main.034d1c81.js"
+    "static/js/main.8f936435.js"
   ]
 }
