@@ -25,10 +25,12 @@ const useGameLogic = () => {
 
     const makeGuess = (guess) => {
         const result = checkGuess(guess, secretCode);
-        const newFeedback = feedback.map((fb, index) =>
+        setFeedback(prevFeedback => {
+          const newFeedback = prevFeedback.map((fb, index) =>
             index === activeRow ? result : fb
-        );
-        setFeedback(newFeedback);
+          );
+          return newFeedback;
+        });
 
         if (result.filter(item => item === 'black').length === 4) {
             setWins(wins + 1);

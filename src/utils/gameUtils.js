@@ -19,7 +19,6 @@ export const checkGuess = (guess, secretCode) => {
     // First pass: check for correct color and shape in right position
     guessCopy.forEach((peg, index) => {
         if (peg.color === codeCopy[index].color && peg.shape === codeCopy[index].shape) {
-            console.log('Color: ', peg.color, ' Shape: ', peg.shape);
             feedback.push('black');
             codeCopy[index] = { color: null, shape: null };
             guessCopy[index] = { color: null, shape: null };
@@ -31,28 +30,23 @@ export const checkGuess = (guess, secretCode) => {
         if (peg.color && peg.shape) {
             const colorIndex = codeCopy.findIndex(codePeg => codePeg.color === peg.color && codePeg.shape === peg.shape);
             if (colorIndex > -1) {
-                console.log('Color: ', peg.color, ' Shape: ', peg.shape);
                 feedback.push('white');
                 codeCopy[colorIndex] = { color: null, shape: null };
-                guessCopy[index] = { color: null, shape: null }; // Add this line to nullify the guess peg
+                guessCopy[index] = { color: null, shape: null };
             }
         }
     });
 
     // Third pass: check for correct color or shape in wrong position
     guessCopy.forEach((peg, index) => {
-        if (peg.color && peg.shape) { // Ensure the peg hasn't been nullified already
-            const colorIndex = codeCopy.findIndex(codePeg => codePeg.color === peg.color);
-            const shapeIndex = codeCopy.findIndex(codePeg => codePeg.shape === peg.shape);
-            if (colorIndex == index || shapeIndex == index) {
+        if (peg.color && peg.shape) {
+            if (codeCopy[index].color === peg.color || codeCopy[index].shape === peg.shape) {
                 feedback.push('blue');
-                if (colorIndex > -1) {
-                    console.log('Color: ', peg.color, 'index: ', index);
-                    codeCopy[colorIndex] = { color: null, shape: null };
+                if (codeCopy[index].color === peg.color) {
+                    codeCopy[index] = { color: null, shape: null };
                 }
-                if (shapeIndex > -1) {
-                    console.log('Shape: ', peg.shape, 'index: ', index);
-                    codeCopy[shapeIndex] = { color: null, shape: null };
+                if (codeCopy[index].shape === peg.shape) {
+                    codeCopy[index] = { color: null, shape: null };
                 }
                 guessCopy[index] = { color: null, shape: null }; // Nullify the guess peg
             }
